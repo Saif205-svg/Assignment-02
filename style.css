@@ -7,8 +7,6 @@
     font-family: "Inter", sans-serif;
   }
 }
-
-
 :root {
   --gradient-primary: linear-gradient(
     90deg,
@@ -38,7 +36,6 @@
   --box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
   --text-custom:rgba(125, 121, 121, 0.567);
 }
-
 
 @layer utilities {
   .gradient-primary-text {
