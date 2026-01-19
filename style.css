@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import "tailwindcss";
+
+@layer utilities {
+  .google-font-inner {
+    font-family: "Inter", sans-serif;
+  }
+}
+
+
+:root {
+  --gradient-primary: linear-gradient(
+    90deg,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
+
+  --gradient-secondary: linear-gradient(
+    47.64deg,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
+
+  /*  Background Colors */
+  --bg-color: #1a0b2e;
+  --bg-chooses: #230e3d;
+  --card-chooses: #351165;
+
+  --text-primary: #ffffff;
+  --text-green: rgba(0, 255, 136, 1);
+
+  --border-color: rgba(65, 37, 103, 1);
+  --btn-border: rgba(0, 255, 136, 1);
+
+  --box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+  --text-custom:rgba(125, 121, 121, 0.567);
+}
+
+
+@layer utilities {
+  .gradient-primary-text {
+    background: var(--gradient-primary);
+    background-clip: text;
+    color: transparent;
+  }
+  .gradient-button {
+    background: var(--gradient-secondary);
+  }
+  .bg-image {
+    background: url("./assets/hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  .hero-img {
+    background: url("./assets/hero-circle.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 320px;
+    height: 320px;
+  }
+  .footer-img {
+    background: url("./assets/footer-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@keyframes pingpong {
+  from{
+    left: 0px;
+  }
+  to{
+    right: 370px;
+    background-color:rgba(0, 255, 255, 0.266);
+  }
+}
+.container:hover{
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: pingpong 2s ease-in-out 0.5s 3 alternate;
+  background-color:;
+}
