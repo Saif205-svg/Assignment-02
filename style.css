@@ -79,5 +79,4 @@
 .container:hover{
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
   animation: pingpong 2s ease-in-out 0.5s 3 alternate;
-  background-color:;
 }
